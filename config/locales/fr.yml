@@ -1,0 +1,22 @@
+fr:
+  css_checker_header: Verificateur Css
+  description: "Vérifie pour les erreurs courantes dans le design de pages HTML pour ces éléments:<br /><ul>
+    <li>Compression GZIP</li>
+    <li>Nombre de fichiers CSS</li>
+    <li>CSS minifié</li>
+    <li>Taille des CSS</li>
+    <li>Styles dans le HTML.</li>
+    <li>Cokies créé par le CSS</li></ul>"  
+  site_url_label: "URL du site web à vérifier:"
+  submit_button: "Soumettre"
+  specify_url: "Spécifiez l'URL à vérifier."
+  no_errors: "Il n'y a pas d'erreurs"
+  CookieVerificator: "Vérification des cookies"
+  EmbedVerificator: "Vérification des styles dans la page"
+  GzipVerificator: "Vérification du GZIP"
+  MinifiedVerificator: "Vérification de la minification"
+  NumberVerificator: "Vérification du nombre de CSS"
+  SizeVerificator: "Vérification de la taille des styles"
+  me: "très drôle"
+  css_found: "Css trouvé pour ce site:"
+  verifications: "Vérifications:"

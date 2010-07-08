@@ -1,0 +1,25 @@
+en:
+  css_checker_header: Css Checker
+  description: "will verify the validity of you CSS files for these elements:<br /><ul>
+    <li>GZIP compression</li>
+    <li>Number of CSS cfiles</li>
+    <li>Css file minified</li>
+    <li>Size of CSS files</li>
+    <li>Styles in the HTML</li>
+    <li>CSS sets cookies</li>
+    </ul>"
+  site_url_label: "Web site URL to verify:"
+  submit_button: "Submit"
+  specify_url: "Specify the URL"
+  no_errors: "There are no errors"
+  CookieVerificator: "Cookie verification"
+  EmbedVerificator: "Embeded styles in page verification"
+  GzipVerificator: "GZIP verification"
+  MinifiedVerificator: "Miniy verification"
+  NumberVerificator: "Number of CSS verification"
+  SizeVerificator: "Size of styles verification"
+  me: "Very funny!"
+  css_found: "Css found for this site:"
+  verifications: "Verifications"
+
+    
