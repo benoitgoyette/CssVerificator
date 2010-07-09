@@ -20,3 +20,7 @@ fr:
   me: "très drôle"
   css_found: "Css trouvé pour ce site:"
   verifications: "Vérifications:"
+  error: Erreur
+  errors:
+    404: Page introuvable
+  

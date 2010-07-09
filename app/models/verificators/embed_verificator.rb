@@ -4,6 +4,6 @@ class EmbedVerificator < Verificator
     doc = Hpricot(get_page.body)
     result = doc.search('style')
     errors = []
-    errors << "Warning: the page #{uri.to_s} includes embeded styles" unless result.blank?
+    errors << "Warning: the page #{uri.to_s} <span class=\"warning\">includes embeded styles</span>" unless result.blank?
   end
 end

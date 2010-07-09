@@ -10,7 +10,7 @@ class SizeVerificator < Verificator
     embed_styles = doc.search('style')
     total_size += embed_styles.size
     
-    errors << "The total size for all styles is grater than 100k (#{total_size} bytes)" if total_size > 100 * 1024
+    errors << "The total size for all styles <span class=\"error\">is grater than 100k</span> (#{total_size} bytes)" if total_size > 100 * 1024
   end
 
 end

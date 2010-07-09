@@ -21,5 +21,9 @@ en:
   me: "Very funny!"
   css_found: "Css found for this site:"
   verifications: "Verifications"
+  error: Error
+  errors:
+    404: Page not found
+    
 
     
