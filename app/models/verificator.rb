@@ -53,6 +53,7 @@ class Verificator
     end
     
     def prepare(url)
+      @@css_documents = {}
       @@page_uri = to_uri(url)
       @@page = fetch @@page_uri
       list = get_page_links
@@ -84,7 +85,6 @@ class Verificator
 
     def normalize_uri(uri)
       link_uri  = URI.parse(uri)
-      puts ">>>>>> NORMALIZING #{uri} #{link_uri.path[0, 1]}"
       if link_uri.relative? 
         page_uri = @@page_uri
         link_uri.scheme = page_uri.scheme
@@ -93,7 +93,6 @@ class Verificator
         link_uri.port = page_uri.port if page_uri.port != 80
         link_uri.path = "/" + link_uri.path if link_uri.path[0,1] != "/"
       end
-      puts ">>>>>> NORMALIZED  #{link_uri.to_s}"
       link_uri
     end
 
@@ -102,7 +101,6 @@ class Verificator
       w = /@import\s+[url\s*\(]*"([\w\.\-\/\s]*)"[\)]*\s*;.*$/
       m = w.match content
       if m
-        puts ">>>>>>>> FOUND: #{m[1]}"
         res << m[1]
         res << get_imports_tags($')
       end
@@ -110,12 +108,9 @@ class Verificator
     end
 
     def get_css_imports(content)
-      puts "GETTING CSS IMPORTS !!!"
       tags = get_imports_tags(content)
-      puts "   FOUND TAGS #{tags.compact.inspect}"
       tags.compact
       tags.each do |tag|
-        puts ">>>>>>>>>>>>>>> FOUND CSS_IMPORT #{tag}"
         css_response = get_single_css(normalize_uri(tag))
         get_css_imports(css_response.body)
       end  
