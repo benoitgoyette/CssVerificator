@@ -6348,3 +6348,136 @@ Processing CssController#index (for 127.0.0.1 at 2010-07-09 11:37:59) [GET]
 Rendering template within layouts/application
 Rendering css/index
 Completed in 1905ms (View: 57, DB: 0) | 200 OK [http://localhost/css?site%5Burl%5D=ebay.com&commit=Submit]
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-09 11:48:03) [GET]
+  Parameters: {"commit"=>"Submit", "site"=>{"url"=>"amazon.ca"}}
+Rendering template within layouts/application
+Rendering css/index
+Completed in 3585ms (View: 12, DB: 0) | 200 OK [http://localhost/css?site[url]=amazon.ca&commit=Submit]
+
+
+Processing CssController#index (for 192.168.10.158 at 2010-07-09 14:01:26) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://192.168.10.136/css]
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-12 07:49:47) [GET]
+  Parameters: {"commit"=>"Submit", "site"=>{"url"=>"amazon.ca"}}
+Rendering template within layouts/application
+Rendering css/index
+Completed in 3715ms (View: 63, DB: 0) | 200 OK [http://localhost/css?site[url]=amazon.ca&commit=Submit]
+
+
+Processing CssController#index (for 192.168.11.238 at 2010-07-12 08:44:50) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 56ms (View: 54, DB: 0) | 200 OK [http://192.168.10.136/]
+
+
+Processing CssController#index (for 192.168.11.238 at 2010-07-12 08:44:58) [GET]
+  Parameters: {"locale"=>"fr"}
+Rendering template within layouts/application
+Rendering css/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://192.168.10.136/css?locale=fr]
+
+
+Processing CssController#index (for 192.168.11.238 at 2010-07-12 08:45:01) [GET]
+  Parameters: {"locale"=>"en"}
+Rendering template within layouts/application
+Rendering css/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://192.168.10.136/css?locale=en]
+
+
+Processing CssController#index (for 192.168.11.238 at 2010-07-12 08:45:04) [GET]
+  Parameters: {"locale"=>"fr"}
+Rendering template within layouts/application
+Rendering css/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://192.168.10.136/css?locale=fr]
+
+
+Processing CssController#index (for 192.168.11.238 at 2010-07-12 08:45:08) [GET]
+  Parameters: {"locale"=>"en"}
+Rendering template within layouts/application
+Rendering css/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://192.168.10.136/css?locale=en]
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-12 10:06:24) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 54ms (View: 52, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-12 10:06:28) [GET]
+  Parameters: {"commit"=>"Submit", "site"=>{"url"=>"w3.org"}}
+503 "Service Unavailable due to Unknown abuse from requesting IP"
+/usr/local/lib/ruby/1.8/net/http.rb:2097:in `error!'
+/Users/goyette/dev/prototypes/rails/css_validator/app/models/verificator.rb:132:in `fetch'
+/Users/goyette/dev/prototypes/rails/css_validator/app/models/verificator.rb:57:in `prepare'
+/Users/goyette/dev/prototypes/rails/css_validator/app/models/verificator.rb:44:in `verify'
+/Users/goyette/dev/prototypes/rails/css_validator/app/controllers/css_controller.rb:18:in `index'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+Rendering template within layouts/application
+Rendering css/index
+Completed in 226ms (View: 7, DB: 0) | 200 OK [http://localhost/css?site%5Burl%5D=w3.org&commit=Submit]
