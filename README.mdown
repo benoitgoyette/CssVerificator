@@ -1,0 +1,59 @@
+# CssVerificator
+
+CssVerificator is a Rails application which checks 5 items around CSS for leveraging performances. This is a prototype. You are welcome to use, fork, improve, twist it.
+
+## The Story
+
+[Nicole Sullivan](http://www.stubbornella.org/) ([@stubbornella](http://twitter.com/stubbornella)) recently outlined the [Top 5 Mistakes of Massive CSS](http://www.stubbornella.org/content/2010/07/01/top-5-mistakes-of-massive-css/). After a survey, Nicolle Sullivan found out that
+
+* 42% Don’t GZIP CSS
+* 44% Have more than 2 CSS external files
+* 56% Serve CSS with cookies (yummy to eat, bad for static content)
+* 62% Don’t minify (check out the YUI Compressor!)
+* 21% Have greater than 100K of CSS
+
+We then decided to create a service that would help Web developers fix these 5 items only for leveraging performances on their Web sites.
+
+## Installation 
+
+The project has been created in Rails 2.3.8.
+
+    git clone git://github.com/benoitgoyette/CssVerificator.git
+
+Then 
+
+    cd CssVerificator
+    ./script/server
+
+Enjoy!
+
+See online at http://css-verificator.heroku.com
+
+## Acknowledgements 
+
+Thanks to Karl Dubost - [http://la-grange.net/karl/](http://la-grange.net/karl/ "Karl Dubost")
+and Pheromone - [http://lab.pheromone.ca/](http://lab.pheromone.ca/ "Le Lab / Pheromone")
+
+## License 
+
+The MIT License
+
+Copyright (c) 2010 Benoit Goyette
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
