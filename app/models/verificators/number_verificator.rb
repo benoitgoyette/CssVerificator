@@ -1,4 +1,4 @@
-require 'Verificator'
+require 'verificator'
 class NumberVerificator < Verificator
   def perform(uri)
     errors = []

@@ -1,4 +1,4 @@
-require 'Verificator'
+require 'verificator'
 class SizeVerificator < Verificator
   def perform(uri)
     errors=[]

@@ -1,4 +1,4 @@
-require 'Verificator'
+require 'verificator'
 class GzipVerificator < Verificator
   def perform(uri)
     errors = []
