@@ -1,5 +1,6 @@
 fr:
-  css_checker_header: Verificateur Css
+  css_title: Vérificateur Css
+  css_checker_header: Vérificateur Css
   description: "Vérifie pour les erreurs courantes dans le design de pages HTML pour ces éléments:<br /><ul>
     <li>Compression GZIP</li>
     <li>Nombre de fichiers CSS</li>

@@ -1,12 +1,13 @@
 en:
-  css_checker_header: Css Checker
+  css_title: Css Verificator
+  css_checker_header: Css Verificator
   description: "will verify the validity of you CSS files for these elements:<br /><ul>
     <li>GZIP compression</li>
-    <li>Number of CSS cfiles</li>
-    <li>Css file minified</li>
+    <li>Number of CSS files</li>
+    <li>Css file minified </li>
     <li>Size of CSS files</li>
-    <li>Styles in the HTML</li>
     <li>CSS sets cookies</li>
+    <li>Styles in the HTML</li>
     </ul>"
   site_url_label: "Web site URL to verify:"
   submit_button: "Submit"
