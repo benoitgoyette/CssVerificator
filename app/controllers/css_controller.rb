@@ -10,18 +10,14 @@ class CssController < ApplicationController
     @site = Site.new
     url = params[:site][:url] if params[:site]
     if url
-      if url.match(/192\.168\.10\.136/)
-        @results = { :me => 'Own site'}
-      else
-        @site.url = url
-        begin
-          @results = Verificator.verify url
-          @css_list = Verificator.css_documents
-        rescue Exception => e
-          @results = {'error' => get_correct_error_message(e)}
-          logger.info e.message
-          logger.debug e.backtrace.join("\n")
-        end
+      @site.url = url
+      begin
+        @results = Verificator.verify url
+        @css_list = Verificator.css_documents
+      rescue Exception => e
+        @results = {'error' => get_correct_error_message(e)}
+        logger.info e.message
+        logger.debug e.backtrace.join("\n")
       end
     end
   end
