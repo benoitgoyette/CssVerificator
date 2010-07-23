@@ -75,7 +75,6 @@ class Verificator
     def get_single_css(css_uri)
       begin
         res = fetch(css_uri)
-        sleep 0.25
         if res['Content-Type'] == 'text/css'
           @@css_documents[css_uri] = res
         end

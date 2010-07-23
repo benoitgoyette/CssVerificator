@@ -1,13 +1,14 @@
 fr:
   css_title: Vérificateur Css
   css_checker_header: Vérificateur Css
-  description: "Vérifie pour les erreurs courantes dans le design de pages HTML pour ces éléments:<br /><ul>
+  description: "Ce service vérifie pour les erreurs courantes dans le design de pages HTML pour ces éléments:<br /><ul>
     <li>Compression GZIP</li>
     <li>Nombre de fichiers CSS</li>
     <li>CSS minifié</li>
     <li>Taille des CSS</li>
     <li>Styles dans le HTML.</li>
-    <li>Cokies créé par le CSS</li></ul>"  
+    <li>Cokies créé par le CSS</li>
+    </ul>"  
   site_url_label: "URL du site web à vérifier:"
   submit_button: "Soumettre"
   specify_url: "Spécifiez l'URL à vérifier."
@@ -20,6 +21,7 @@ fr:
   SizeVerificator: "Vérification de la taille des styles"
   me: "très drôle"
   css_found: "Css trouvé pour ce site:"
+  no_css_found: "Aucun Css trouvé"
   verifications: "Vérifications:"
   error: Erreur
   errors:

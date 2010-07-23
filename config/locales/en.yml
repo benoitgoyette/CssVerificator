@@ -1,7 +1,7 @@
 en:
   css_title: Css Verificator
   css_checker_header: Css Verificator
-  description: "will verify the validity of you CSS files for these elements:<br /><ul>
+  description: "this service will verify the validity of you CSS files for these elements:<br /><ul>
     <li>GZIP compression</li>
     <li>Number of CSS files</li>
     <li>Css file minified </li>
@@ -21,6 +21,7 @@ en:
   SizeVerificator: "Size of styles verification"
   me: "Very funny!"
   css_found: "Css found for this site:"
+  no_css_found: "No Css found"
   verifications: "Verifications"
   error: Error
   errors:

@@ -14,6 +14,7 @@ class MinifiedVerificator < Verificator
 
       match = res.body.match(/\/\*/) || res.body.match(/\*\//)
       unless match.blank?
+      #TODO replace hard coded errors with keys and puts error messages in locale files instead
         err += "#{css.to_s} doesn't seem to be minified because <span class=\"error\">it contains comments</span> " 
       end
 
@@ -23,6 +24,7 @@ class MinifiedVerificator < Verificator
         else
           err += " and "
         end
+      #TODO replace hard coded errors with keys and puts error messages in locale files instead
         err += " <span class=\"error\">the ratio #{total_size} characters / #{line_count} lines =  #{total_size/line_count} is greater than 100</span> " 
       end
     end 

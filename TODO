@@ -1,4 +1,13 @@
 TODOS
 
-. Have the result messages in separate languages
 . Add some css of our own.
+. Finish the XML builder view
+. In the verificators, instead of having the error messages hardcoded, put a message placeholder and put the error message in the locale files instead
+    in the format:
+    errors:
+        too_many_css:
+            html: "<b>There <i>are</i> too</b> many...  blah blah blah..."
+            xml: too many css
+
+. Do the JSON response format. right now, it crashes.
+
