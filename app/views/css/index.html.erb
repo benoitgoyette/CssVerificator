@@ -1,45 +1,50 @@
-<h1><%= (t('css_checker_header')) %></h1>
-<%= locale_selector %>
-
-<p>
-  <%=  (t('description')) %>
-</p>
-
-<p><%=(t('specify_url')) unless @results%></p>
-<p>
-  <% form_for :site, :url=>css_path, :html=>{:method=>:get} do |form| %>
-    <%=(t('site_url_label'))%> <%= form.text_field :url %>
-    <%= form.submit t('submit_button')%>
-  <%end%>
-</p>  
-
-<% unless @css_list.blank? %>
-<p>
-  <%= t('css_found')%>
-  <ul>
-    <% @css_list.each do |css, document| %>
-      <li><%= css%></li>
+<div class="media"> 
+  <hgroup> 
+    <h1><%=t('css_verif_header')%></h1> 
+    <h2><%=t('css_verif_subtitle')%></h2> 
+  </hgroup> 
+  
+  <section id="form"> 
+    <% form_for :site, :url=>css_path, :html=>{:method=>:get, :id=>'css', :name=>'css'} do |form| %>
+      <label for="site_url"><%= t('web_site')%> <abbr title="Uniform Resource Locator" lang="en">URL</abbr> <%=t('to_verify')%></label> 
+      <%= form.text_field :url %>
+      <%= form.submit t('submit_button')%>
     <%end%>
-  </ul>
-</p>
-<%end%>
+  </section> 
+  
+  <section id="list"> 
+    <%= (t('description')) %>
+  </section> 
+</div> 
+      
+<div class="media"> 
+  <div class="results"> 
+    <h2><%= t('css_found')%></h2> 
+    <ul> 
+      <% @css_list.each do |css, document| %>
+        <li><%= css%></li>
+      <%end%>
+    </ul> 
+  </div> 
 
-<% unless @results.blank? %>
-<p>
-  <%= t('verifications')%>
-  <ul>
-  <% @results.each do |klass, results|%>
-    <% unless results.blank?%>
-      <li><%= t(klass)%>
-        <ul>
-        <% results.each do |error| %>
-          <li><%=error%></li>
+  <div class="results"> 
+    <h2><%= t('verifications')%></h2> 
+    <% if @results.blank? %>
+      <p>There are no errors</p> 
+    <%else%>
+      <ul>
+        <% @results.each do |klass, results|%>
+          <% unless results.blank?%>
+            <li><%= t(klass)%>
+              <ul>
+              <% results.each do |error| %>
+                <li><%=error%></li>
+              <%end%>
+              </ul>
+            </li>
+          <%end%>
         <%end%>
-        </ul>
-      </li>
+      </ul>
     <%end%>
-  <%end%>
-  </ul>
-<%else%>
-<p><%= t('no_errors') %></p>
-<%end%>
+  </div> 
+</div> 

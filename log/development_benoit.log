@@ -7164,3 +7164,1326 @@ Processing CssController#index to xml (for 192.168.10.136 at 2010-07-23 09:03:55
   Parameters: {"site"=>{"url"=>"rds.ca"}}
 Rendering css/index
 Completed in 659ms (View: 54, DB: 0) | 200 OK [http://192.168.10.136/css.xml?site[url]=rds.ca]
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:13:59) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:13:59) [GET]
+
+ActionController::RoutingError (No route matches "/global.css" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:15:55) [GET]
+
+ActionController::RoutingError (No route matches "/global.cs" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:15:58) [GET]
+
+ActionController::RoutingError (No route matches "/global.css" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:16:47) [GET]
+Rendering template within layouts/application
+Rendering css/index
+
+ActionView::TemplateError (undefined method `stylesheet_include_tag' for #<ActionView::Base:0x2957bc4>) on line #6 of app/views/layouts/application.html.erb:
+3:   <head> 
+4:     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+5:     <title>CSS Verificator</title> 
+6:     <%= stylesheet_include_tag "global.css", :media=>"screen"%>
+7:   </head> 
+8:   <body> 
+9:   
+
+    app/views/layouts/application.html.erb:6
+    app/controllers/css_controller.rb:30:in `index'
+    thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+    thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+    thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+    thin (1.2.7) lib/thin/connection.rb:57:in `process'
+    thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+    eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+    eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+    thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+    thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendered rescues/_trace (80.3ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:16:54) [GET]
+Rendering template within layouts/application
+Rendering css/index
+
+ActionView::TemplateError (undefined method `stylesheets_include_tag' for #<ActionView::Base:0x29c113c>) on line #6 of app/views/layouts/application.html.erb:
+3:   <head> 
+4:     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+5:     <title>CSS Verificator</title> 
+6:     <%= stylesheets_include_tag "global.css", :media=>"screen"%>
+7:   </head> 
+8:   <body> 
+9:   
+
+    app/views/layouts/application.html.erb:6
+    app/controllers/css_controller.rb:30:in `index'
+    thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+    thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+    thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+    thin (1.2.7) lib/thin/connection.rb:57:in `process'
+    thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+    eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+    eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+    thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+    thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendered rescues/_trace (31.9ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:17:39) [GET]
+Rendering template within layouts/application
+Rendering css/index
+
+ActionView::TemplateError (undefined method `stylesheets_link_tag' for #<ActionView::Base:0x251c870>) on line #6 of app/views/layouts/application.html.erb:
+3:   <head> 
+4:     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+5:     <title>CSS Verificator</title> 
+6:     <%= stylesheets_link_tag "global.css", :media=>"screen"%>
+7:   </head> 
+8:   <body> 
+9:   
+
+    app/views/layouts/application.html.erb:6
+    app/controllers/css_controller.rb:30:in `index'
+    thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+    thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+    thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+    thin (1.2.7) lib/thin/connection.rb:57:in `process'
+    thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+    eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+    eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+    thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+    thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendered rescues/_trace (32.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:17:47) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 56ms (View: 54, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:17:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:18:14) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:18:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:19:16) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:19:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:22:18) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:22:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:25:50) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:25:55) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:25:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:26:19) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:26:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:29:26) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:29:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:32:07) [GET]
+  Parameters: {"commit"=>"Soumettre", "site"=>{"url"=>"http://www.rds.ca"}}
+Rendering template within layouts/application
+Rendering css/index
+Completed in 792ms (View: 4, DB: 0) | 200 OK [http://localhost/css?site%5Burl%5D=http%3A%2F%2Fwww.rds.ca&commit=Soumettre]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:32:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:33:28) [GET]
+  Parameters: {"commit"=>"Soumettre", "site"=>{"url"=>"http://www.rds.ca"}}
+Rendering template within layouts/application
+Rendering css/index
+Completed in 587ms (View: 4, DB: 0) | 200 OK [http://localhost/css?site%5Burl%5D=http%3A%2F%2Fwww.rds.ca&commit=Soumettre]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:33:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:33:51) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:35:02) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:35:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:36:39) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:36:39) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:38:38) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:38:38) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:38:43) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:38:43) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:40:23) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:40:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:41:26) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:41:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:44:10) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:44:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:44:20) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:44:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:52:10) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:52:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:52:13) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:52:13) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:52:25) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:52:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:52:34) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:52:34) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:52:44) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:52:44) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:52:45) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:52:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:52:45) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:52:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:52:45) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 55ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:52:45) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:52:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:52:46) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:52:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:52:46) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:52:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:52:46) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:52:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:52:46) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:52:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:53:49) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 57ms (View: 56, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:53:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:54:15) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:54:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:57:00) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:57:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:57:09) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-27 10:57:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/bouton2.png" with {:method=>:get}):
+  thin (1.2.7) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.7) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.7) lib/thin/connection.rb:57:in `process'
+  thin (1.2.7) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run_machine'
+  eventmachine (0.12.10) lib/eventmachine.rb:256:in `run'
+  thin (1.2.7) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.7) lib/thin/server.rb:156:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 10:59:36) [GET]
+Rendering template within layouts/application
+Rendering css/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 11:00:09) [GET]
+>>>>>>>>>>>>>>>>>>>>  fr
+Rendering template within layouts/application
+Rendering css/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 11:01:26) [GET]
+>>>>>>>>>>>>>>>>>>>>  fr
+Rendering template within layouts/application
+Rendering css/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 11:01:30) [GET]
+  Parameters: {"locale"=>"fr"}
+>>>>>>>>>>>>>>>>>>>>  fr
+Rendering template within layouts/application
+Rendering css/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/css?locale=fr]
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 11:01:45) [GET]
+  Parameters: {"locale"=>"fr"}
+>>>>>>>>>>>>>>>>>>>>  fr
+Rendering template within layouts/application
+Rendering css/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/css?locale=fr]
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 11:01:48) [GET]
+  Parameters: {"locale"=>"en"}
+>>>>>>>>>>>>>>>>>>>>  en
+Rendering template within layouts/application
+Rendering css/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/css?locale=en]
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 11:02:16) [GET]
+  Parameters: {"locale"=>"fr"}
+>>>>>>>>>>>>>>>>>>>>  fr
+Rendering template within layouts/application
+Rendering css/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/css?locale=fr]
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 11:02:19) [GET]
+  Parameters: {"locale"=>"en"}
+>>>>>>>>>>>>>>>>>>>>  en
+Rendering template within layouts/application
+Rendering css/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/css?locale=en]
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 11:02:28) [GET]
+  Parameters: {"commit"=>"Ok", "site"=>{"url"=>"http://www.rds/ca"}}
+>>>>>>>>>>>>>>>>>>>>  en
+404 "Not Found"
+/usr/local/lib/ruby/1.8/net/http.rb:2097:in `error!'
+/Users/goyette/dev/prototypes/rails/css_validator/app/models/verificator.rb:126:in `fetch'
+/Users/goyette/dev/prototypes/rails/css_validator/app/models/verificator.rb:58:in `prepare'
+/Users/goyette/dev/prototypes/rails/css_validator/app/models/verificator.rb:44:in `verify'
+/Users/goyette/dev/prototypes/rails/css_validator/app/controllers/css_controller.rb:19:in `index'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/connection.rb:76:in `pre_process'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/connection.rb:74:in `catch'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/connection.rb:74:in `pre_process'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/connection.rb:57:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/connection.rb:42:in `receive_data'
+/usr/local/lib/ruby/gems/1.8/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run_machine'
+/usr/local/lib/ruby/gems/1.8/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/backends/base.rb:57:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/server.rb:156:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/thin.rb:14:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+Rendering template within layouts/application
+Rendering css/index
+Completed in 81ms (View: 6, DB: 0) | 200 OK [http://localhost/css?site%5Burl%5D=http%3A%2F%2Fwww.rds%2Fca&commit=Ok]
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 11:02:34) [GET]
+  Parameters: {"commit"=>"Ok", "site"=>{"url"=>"http://www.rds.ca"}}
+>>>>>>>>>>>>>>>>>>>>  en
+Rendering template within layouts/application
+Rendering css/index
+Completed in 573ms (View: 5, DB: 0) | 200 OK [http://localhost/css?site%5Burl%5D=http%3A%2F%2Fwww.rds.ca&commit=Ok]
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 11:03:26) [GET]
+  Parameters: {"commit"=>"Ok", "site"=>{"url"=>"http://legrandclub.rds.ca"}}
+>>>>>>>>>>>>>>>>>>>>  en
+Rendering template within layouts/application
+Rendering css/index
+Completed in 3311ms (View: 4, DB: 0) | 200 OK [http://localhost/css?site%5Burl%5D=http%3A%2F%2Flegrandclub.rds.ca&commit=Ok]
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 11:03:55) [GET]
+  Parameters: {"commit"=>"Ok", "site"=>{"url"=>"http://www.la-grange.net/2010/07/08/vie-des-objets"}}
+>>>>>>>>>>>>>>>>>>>>  en
+Rendering template within layouts/application
+Rendering css/index
+Completed in 822ms (View: 5, DB: 0) | 200 OK [http://localhost/css?site%5Burl%5D=http%3A%2F%2Fwww.la-grange.net%2F2010%2F07%2F08%2Fvie-des-objets&commit=Ok]
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 11:04:15) [GET]
+  Parameters: {"locale"=>"fr"}
+>>>>>>>>>>>>>>>>>>>>  fr
+Rendering template within layouts/application
+Rendering css/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/css?locale=fr]
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 11:04:18) [GET]
+  Parameters: {"locale"=>"en"}
+>>>>>>>>>>>>>>>>>>>>  en
+Rendering template within layouts/application
+Rendering css/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/css?locale=en]
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 11:04:20) [GET]
+  Parameters: {"locale"=>"fr"}
+>>>>>>>>>>>>>>>>>>>>  fr
+Rendering template within layouts/application
+Rendering css/index
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/css?locale=fr]
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 11:04:26) [GET]
+  Parameters: {"commit"=>"Ok", "site"=>{"url"=>"http://www.elwing-studio.fr/css-verificator/bouton2.png"}}
+>>>>>>>>>>>>>>>>>>>>  fr
+Rendering template within layouts/application
+Rendering css/index
+Completed in 1062ms (View: 6, DB: 0) | 200 OK [http://localhost/css?site%5Burl%5D=http%3A%2F%2Fwww.elwing-studio.fr%2Fcss-verificator%2Fbouton2.png&commit=Ok]
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 11:04:34) [GET]
+  Parameters: {"commit"=>"Ok", "site"=>{"url"=>"http://www.elwing-studio.fr/css-verificator/bouton2.png"}}
+>>>>>>>>>>>>>>>>>>>>  fr
+Rendering template within layouts/application
+Rendering css/index
+Completed in 196ms (View: 5, DB: 0) | 200 OK [http://localhost/css?site%5Burl%5D=http%3A%2F%2Fwww.elwing-studio.fr%2Fcss-verificator%2Fbouton2.png&commit=Ok]
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 11:04:42) [GET]
+  Parameters: {"commit"=>"Ok", "site"=>{"url"=>"http://www.elwing-studio.fr/css-verificator/"}}
+>>>>>>>>>>>>>>>>>>>>  fr
+404 "Not Found"
+/usr/local/lib/ruby/1.8/net/http.rb:2097:in `error!'
+/Users/goyette/dev/prototypes/rails/css_validator/app/models/verificator.rb:126:in `fetch'
+/Users/goyette/dev/prototypes/rails/css_validator/app/models/verificator.rb:77:in `get_single_css'
+/Users/goyette/dev/prototypes/rails/css_validator/app/models/verificator.rb:61:in `prepare'
+/Users/goyette/dev/prototypes/rails/css_validator/app/models/verificator.rb:60:in `each'
+/Users/goyette/dev/prototypes/rails/css_validator/app/models/verificator.rb:60:in `prepare'
+/Users/goyette/dev/prototypes/rails/css_validator/app/models/verificator.rb:44:in `verify'
+/Users/goyette/dev/prototypes/rails/css_validator/app/controllers/css_controller.rb:19:in `index'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/connection.rb:76:in `pre_process'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/connection.rb:74:in `catch'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/connection.rb:74:in `pre_process'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/connection.rb:57:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/connection.rb:42:in `receive_data'
+/usr/local/lib/ruby/gems/1.8/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run_machine'
+/usr/local/lib/ruby/gems/1.8/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/backends/base.rb:57:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/server.rb:156:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/thin.rb:14:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+Rendering template within layouts/application
+Rendering css/index
+Completed in 528ms (View: 5, DB: 0) | 200 OK [http://localhost/css?site%5Burl%5D=http%3A%2F%2Fwww.elwing-studio.fr%2Fcss-verificator%2F&commit=Ok]
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 11:04:53) [GET]
+  Parameters: {"commit"=>"Ok", "site"=>{"url"=>"http://www.elwing-studio.fr/css-verificator"}}
+>>>>>>>>>>>>>>>>>>>>  fr
+404 "Not Found"
+/usr/local/lib/ruby/1.8/net/http.rb:2097:in `error!'
+/Users/goyette/dev/prototypes/rails/css_validator/app/models/verificator.rb:126:in `fetch'
+/Users/goyette/dev/prototypes/rails/css_validator/app/models/verificator.rb:77:in `get_single_css'
+/Users/goyette/dev/prototypes/rails/css_validator/app/models/verificator.rb:61:in `prepare'
+/Users/goyette/dev/prototypes/rails/css_validator/app/models/verificator.rb:60:in `each'
+/Users/goyette/dev/prototypes/rails/css_validator/app/models/verificator.rb:60:in `prepare'
+/Users/goyette/dev/prototypes/rails/css_validator/app/models/verificator.rb:44:in `verify'
+/Users/goyette/dev/prototypes/rails/css_validator/app/controllers/css_controller.rb:19:in `index'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/connection.rb:76:in `pre_process'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/connection.rb:74:in `catch'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/connection.rb:74:in `pre_process'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/connection.rb:57:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/connection.rb:42:in `receive_data'
+/usr/local/lib/ruby/gems/1.8/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run_machine'
+/usr/local/lib/ruby/gems/1.8/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/backends/base.rb:57:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/server.rb:156:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/thin.rb:14:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+Rendering template within layouts/application
+Rendering css/index
+Completed in 641ms (View: 5, DB: 0) | 200 OK [http://localhost/css?site%5Burl%5D=http%3A%2F%2Fwww.elwing-studio.fr%2Fcss-verificator&commit=Ok]
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 11:17:36) [GET]
+  Parameters: {"commit"=>"Ok", "site"=>{"url"=>"http://www.elwing-studio.fr/css-verificator"}}
+>>>>>>>>>>>>>>>>>>>>  fr
+404 "Not Found"
+/usr/local/lib/ruby/1.8/net/http.rb:2097:in `error!'
+/Users/goyette/dev/prototypes/rails/css_validator/app/models/verificator.rb:126:in `fetch'
+/Users/goyette/dev/prototypes/rails/css_validator/app/models/verificator.rb:77:in `get_single_css'
+/Users/goyette/dev/prototypes/rails/css_validator/app/models/verificator.rb:61:in `prepare'
+/Users/goyette/dev/prototypes/rails/css_validator/app/models/verificator.rb:60:in `each'
+/Users/goyette/dev/prototypes/rails/css_validator/app/models/verificator.rb:60:in `prepare'
+/Users/goyette/dev/prototypes/rails/css_validator/app/models/verificator.rb:44:in `verify'
+/Users/goyette/dev/prototypes/rails/css_validator/app/controllers/css_controller.rb:19:in `index'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/connection.rb:76:in `pre_process'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/connection.rb:74:in `catch'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/connection.rb:74:in `pre_process'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/connection.rb:57:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/connection.rb:42:in `receive_data'
+/usr/local/lib/ruby/gems/1.8/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run_machine'
+/usr/local/lib/ruby/gems/1.8/gems/eventmachine-0.12.10/lib/eventmachine.rb:256:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/backends/base.rb:57:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/thin-1.2.7/lib/thin/server.rb:156:in `start'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/thin.rb:14:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+Rendering template within layouts/application
+Rendering css/index
+Completed in 1763ms (View: 59, DB: 0) | 200 OK [http://localhost/css?site%5Burl%5D=http%3A%2F%2Fwww.elwing-studio.fr%2Fcss-verificator&commit=Ok]
+
+
+Processing CssController#index (for 127.0.0.1 at 2010-07-27 11:17:49) [GET]
+  Parameters: {"commit"=>"Ok", "site"=>{"url"=>"http://www.rds.ca"}}
+>>>>>>>>>>>>>>>>>>>>  fr
+Rendering template within layouts/application
+Rendering css/index
+Completed in 542ms (View: 4, DB: 0) | 200 OK [http://localhost/css?site%5Burl%5D=http%3A%2F%2Fwww.rds.ca&commit=Ok]

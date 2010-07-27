@@ -1,16 +1,18 @@
 en:
   css_title: Css Verificator
-  css_checker_header: Css Verificator
-  description: "this service will verify the validity of you CSS files for these elements:<br /><ul>
-    <li>GZIP compression</li>
-    <li>Number of CSS files</li>
-    <li>Css file minified </li>
-    <li>Size of CSS files</li>
-    <li>CSS sets cookies</li>
-    <li>Styles in the HTML</li>
+  css_verif_header: "<abbr title=\"Cascading stylesheets\" lang=\"en\">CSS</abbr> Verificator"
+  css_verif_subtitle: "Verify the validity of your CSS files"
+  description: "<p>This service will verify the validity of you CSS files for these elements :</p> 
+    <ul> 
+      <li><acronym title='Gnu Zip' lang='en'>GZIP</acronym> compression</li> 
+      <li>Number of CSS files</li> 
+      <li>CSS file minified</li> 
+      <li>Size of CSS files</li> 
+      <li>CSS sets cookies</li> 
+      <li>Styles in the <abbr title='Hypertext Markup Language' lang='en'>HTML</abbr></li> 
     </ul>"
   site_url_label: "Web site URL to verify:"
-  submit_button: "Submit"
+  submit_button: "Ok"
   specify_url: "Specify the URL"
   no_errors: "There are no errors"
   CookieVerificator: "Cookie verification"
@@ -23,9 +25,9 @@ en:
   css_found: "Css found for this site:"
   no_css_found: "No Css found"
   verifications: "Verifications"
-  error: Error
+  error: "Error"
+  web_site: "Web site"
+  to_verify: "to verify :"
   errors:
-    404: Page not found
-    
-
+    404: "Page not found"
     

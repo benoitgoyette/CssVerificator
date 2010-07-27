@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+        <title>CSS Verificator</title> 
+    <link href="verificator.css" rel="stylesheet" type="text/css" media="screen" /> 
+    </head> 
+    <body> 
+      
+  <div id="page"> 
+    <header> 
+      <h1>phéromone<span>lab</span></h1> 
+      <nav> 
+        <ul> 
+          <li>EN</li> 
+          <li><a href="/css?locale=fr" title="Le site en français" hreflang="fr">FR</a></li> 
+        </ul> 
+      </nav> 
+    </header> 
+     
+    <div class="media"> 
+      <hgroup> 
+            <h1><abbr title="Cascading stylesheets" lang="en">CSS</abbr> Verificator</h1> 
+        <h2>Verify the validity of your CSS files</h2> 
+      </hgroup> 
+      
+      <section id="form"> 
+        <form method="get" action="#" name="css" id="css" > 
+          <label for="site_url">Web site <abbr title="Uniform Resource Locator" lang="en">URL</abbr> to verify :</label> 
+          <input type="text" id="site_url" name="site_url" /> 
+          <input id="site_submit" name="commit" type="submit" value="ok" /> 
+        </form> 
+      </section> 
+      
+      <section id="list"> 
+        <p>This service will verify the validity of you CSS files for these elements :</p> 
+        <ul> 
+          <li><acronym title="Gnu Zip" lang="en">GZIP</acronym> compression</li> 
+          <li>Number of CSS files</li> 
+          <li># CSS file minified</li> 
+          <li>Size of CSS files</li> 
+          <li>CSS sets cookies</li> 
+          <li>Styles in the <abbr title="Hypertext Markup Language" lang="en">HTML</abbr></li> 
+        </ul> 
+      </section> 
+    </div> 
+          
+    <div class="media"> 
+      <div class="results"> 
+        <h2>CSS found for this site</h2> 
+        <ul> 
+          <li>http://www.elwing-studio.fr/css.php?n=default</li> 
+        </ul> 
+      </div> 
+    
+      <div class="results"> 
+        <h2>Vérifications</h2> 
+        <p>There are no errors</p> 
+        <ul> 
+          <li>GZIP verification
+            <ul> 
+              <li>http://www.elwing-studio.fr/css.php?n=default <span class="error">is not gzipped</span></li> 
+            </ul> 
+          </li> 
+          <li>Miniy verification
+            <ul> 
+              <li>http://www.elwing-studio.fr/css.php?n=default doesn't seem to be minified because <span class="error">it contains comments</span>  and  <span class="error">the ratio 3365 characters / 238 lines =  14 is greater than 100</span> </li> 
+            </ul> 
+          </li> 
+        </ul> 
+      </div> 
+    </div> 
+  
+  </div> 
+    </body> 
+</html> 

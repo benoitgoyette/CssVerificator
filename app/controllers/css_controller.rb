@@ -6,6 +6,9 @@ class CssController < ApplicationController
   before_filter :locale
   
   def index
+    
+    logger.debug ">>>>>>>>>>>>>>>>>>>>  #{I18n.locale}"
+    
     @site = Site.new
     @results = []
     @css_list = []
