@@ -32,7 +32,7 @@ See online at http://css-verificator.heroku.com
 ## Acknowledgements 
 
 Thanks to Karl Dubost - [http://la-grange.net/karl/](http://la-grange.net/karl/ "Karl Dubost")
-Special thanks to Jean-François Le Gac for the CSS
+Special thanks to Jean-François Le Gac for the CSS (Twitter: @Sylvadoc)
 and Pheromone - [http://lab.pheromone.ca/](http://lab.pheromone.ca/ "Le Lab / Pheromone")
 
 

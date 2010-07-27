@@ -1,7 +1,7 @@
 TODOS
 
-. Add some css of our own.
 . Finish the XML builder view
+
 . In the verificators, instead of having the error messages hardcoded, put a message placeholder and put the error message in the locale files instead
     in the format:
     errors:
@@ -11,3 +11,6 @@ TODOS
 
 . Do the JSON response format. right now, it crashes.
 
+
+DONE
+. Add some css of our own.  done by Jean-François Le Gac
