@@ -1,4 +1,7 @@
 class CssController < ApplicationController
+    session :off
+
+
   class Site
     attr_accessor :url
   end

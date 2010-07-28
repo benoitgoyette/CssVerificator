@@ -28,5 +28,6 @@ fr:
   error: "Erreur"
   web_site: "Addresse du site"
   to_verify: "à vérifier"
+  about: "à Propos de CssVerificator"
   errors:
     404: "Page introuvable"

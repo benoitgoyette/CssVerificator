@@ -28,6 +28,7 @@ en:
   error: "Error"
   web_site: "Web site"
   to_verify: "to verify :"
+  about: "about CssVerificator"
   errors:
     404: "Page not found"
     

@@ -1,3 +1,5 @@
+/* DO NOT FORGET TO MINIFY THE CSS WITH: rake min:css */
+
 @import url(http://fonts.googleapis.com/css?family=Lobster);
 @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 @import url(http://fonts.googleapis.com/css?family=Josefin+Sans+Std+Light);
@@ -46,6 +48,9 @@ header h1 span {
     font-size: 1.2em;
     text-transform: uppercase;
 }
+header h1 a { text-decoration: none; }
+header h1 a:hover { text-decoration: none; }
+
 header nav {
     display: block;
     padding: 1em;
@@ -195,3 +200,5 @@ section ul {
     html, body {height: 100%;}
     hgroup, #list, #form {width: 95%;}
 }
+#about { text-align: right; height: 40px; background-color: #FFF; color: #d2d2d2; padding: 15px 25px 0 0;}
+#about a {text-decoration:none; color:#000; padding-left: 10px;}
