@@ -158,3 +158,4 @@ Dir.entries(File.join(File.dirname(__FILE__), 'verificators')).each do |file|
   end
 end
 
+
