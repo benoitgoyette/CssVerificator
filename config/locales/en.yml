@@ -18,7 +18,7 @@ en:
   CookieVerificator: "Cookie verification"
   EmbedVerificator: "Embeded styles in page verification"
   GzipVerificator: "GZIP verification"
-  MinifiedVerificator: "Miniy verification"
+  MinifiedVerificator: "Minify verification"
   NumberVerificator: "Number of CSS verification"
   SizeVerificator: "Size of styles verification"
   me: "Very funny!"
