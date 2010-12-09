@@ -25,7 +25,7 @@ class MinifiedVerificator < Verificator
           err += " and "
         end
       #TODO replace hard coded errors with keys and puts error messages in locale files instead
-        err += " <span class=\"error\">the ratio #{total_size} characters / #{line_count} lines =  #{total_size/line_count} is less than 100</span> " 
+        err += " <span class=\"error\">the ratio #{total_size/line_count} (#{total_size} characters / #{line_count} lines) is less than 100</span> " 
       end
     end 
 end
