@@ -18,7 +18,7 @@ class MinifiedVerificator < Verificator
         err += "#{css.to_s} doesn't seem to be minified because <span class=\"error\">it contains comments</span> " 
       end
 
-      if (total_size/line_count) < 100
+      if (total_size/line_count) > 100
         if err.blank?
           err = "#{css} doesn't seem to be minified because " 
         else
